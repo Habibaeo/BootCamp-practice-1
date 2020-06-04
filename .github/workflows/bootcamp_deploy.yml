@@ -26,6 +26,6 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: Install Surge
-      run:  npm install --global surge
+      run:  sudo npm install --global surge
     - name: Run Surge
       run: surge ./ bootcamp.prac.assign1.surge.sh --token ${{ secrets.SURGE_TOKEN }}
